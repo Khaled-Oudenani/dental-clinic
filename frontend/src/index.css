@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  /* ألوان مطابقة لتصميم Stitch الأصلي (Lumina Dental) - ماشي ألوان عشوائية */
+  --color-primary: #006565;
+  --color-primary-container: #008080;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #e3fffe;
+
+  --color-secondary: #516161;
+  --color-secondary-container: #d4e6e5;
+  --color-on-secondary-container: #576867;
+
+  --color-tertiary-container: #cca830;
+  --color-on-tertiary-container: #4f3e00;
+  --color-tertiary-fixed: #ffe088;
+
+  --color-background: #f9f9f9;
+  --color-surface: #f9f9f9;
+  --color-surface-container: #eeeeee;
+  --color-surface-container-low: #f3f3f3;
+  --color-surface-container-high: #e8e8e8;
+
+  --color-outline: #6e7979;
+  --color-outline-variant: #bdc9c8;
+
+  --color-on-background: #1a1c1c;
+  --color-on-surface: #1a1c1c;
+  --color-on-surface-variant: #3e4949;
+
+  --font-display: "Be Vietnam Pro", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+/* أيقونات Material Symbols - الحالة العادية (outline) */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* نسخة "ناعمة" مملوءة، تُستعمل فـ الشعار والأيقونات البارزة */
+.icon-soft {
+  font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+.medical-shadow {
+  box-shadow: 0px 4px 20px rgba(0, 128, 128, 0.05);
+}
