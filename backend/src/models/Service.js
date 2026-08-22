@@ -38,6 +38,14 @@ const serviceSchema = new mongoose.Schema(
       type: Boolean,
       default: true,
     },
+    imageUrl: {
+      type: String,
+      default: null, // رابط الصورة في Cloudinary
+    },
+    imagePublicId: {
+      type: String,
+      default: null, // public_id من Cloudinary لحذف الصورة لاحقاً
+    },
     order: {
       type: Number,
       default: 0, // للتحكم في ترتيب ظهور الخدمات
